@@ -24,7 +24,7 @@ def login(request):
 	else:
 		return render_to_response('login.html', args)
 
-
+# comment
 def logout(request):
 	auth.logout(request)
 	return redirect("/")			
