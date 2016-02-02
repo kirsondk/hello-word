@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Cтатья</title>
+</head>
+<body> 
+<h4>{{ article.article_data }}</h4>
+<h2>{{ article.article_title }}</h2>
+<p>{{ article.article_text }}</p>
+<hr>
+<p>Комментарии:</p>
+{% for comment in comments %}
+	<P>{{comment.comments_text}}</P>
+{% endfor %}
+
+</body>
+</html>
